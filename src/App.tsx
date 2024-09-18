@@ -15,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src="./android-chrome-192x192.png" alt="Checkatrade logo" height={60} />
         <h1>{message || 'Loading...'}</h1>
       </header>
     </div>
