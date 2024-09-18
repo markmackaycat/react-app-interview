@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Checkatrade React Interview App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -14,7 +14,7 @@ In the project directory, you can run:
 ### `npm run start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The app should automatically open in your default browser, if not, open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
