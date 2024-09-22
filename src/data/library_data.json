@@ -1,0 +1,30 @@
+[
+    {
+        "ISBN":9780860000000,
+        "Title":"In Too Deep",
+        "Cover URL":"https:\/\/m.media-amazon.com\/images\/I\/41s4IPscgtL._SX342_SY445_QL70_ML2_.jpg",
+        "Author Name":"Lee Child",
+        "Review":null
+    },
+    {
+        "ISBN":9780430000000,
+        "Title":"Tripwire",
+        "Cover URL":"https:\/\/m.media-amazon.com\/images\/I\/51NaeFSwWCL._SY445_SX342_.jpg",
+        "Author Name":"Lee Child",
+        "Review":null
+    },
+    {
+        "ISBN":9781780000000,
+        "Title":"Gregg's Italian Family Cookbook",
+        "Cover URL":"https:\/\/m.media-amazon.com\/images\/I\/51pUC8j3LpL._SX342_SY445_.jpg",
+        "Author Name":"Gregg Wallace",
+        "Review":"4.5\/5 stars"
+    },
+    {
+        "ISBN":9781470000000,
+        "Title":"My Kind of Food: Recipes I Love to Cook at Home",
+        "Cover URL":"https:\/\/m.media-amazon.com\/images\/I\/511UNmG50GL._SY445_SX342_QL70_ML2_.jpg",
+        "Author Name":"John Torode",
+        "Review":null
+    }
+]
