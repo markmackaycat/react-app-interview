@@ -1,5 +1,7 @@
 # Getting Started with Checkatrade React Interview App
 
+Before performing the following, please make sure you've read [the brief](./BRIEF.md) for the interview exercise.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Install packages
@@ -8,6 +10,16 @@ Run `npm install` in the project directory
 
 
 ## Available Scripts
+
+There are two ways you can run the react application:
+
+1) Run from the command prompt
+2) Spin up the React application within a docker container (you'll need to have [Docker installed](https://www.docker.com/))
+
+**NOTE: If you wish to use a PostgreSQL database for the data on the backend, you will need to use Option 2**
+
+
+## React application (from command prompt)
 
 In the project directory, you can run:
 
@@ -24,28 +36,38 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## React application (within a docker container)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In the project directory, you can run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `docker-compose up`
 
-### `npm run eject`
+This will spin up a docker container `react-app-interview`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Within this container are 3 images:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1) **postgres** - A [PostgreSQL](https://www.postgresql.org/) database
+2) **pgadmin** - An instance of [pgAdmin](https://www.pgadmin.org/) for browsing and manipulating the database
+3) **react_app** - The React application 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The react application can be accessed at [http://localhost:3001](http://localhost:3001)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The pgAdmin instance can be accessed at [http://localhost:3002](http://localhost:3002)
 
-## Learn More
+For pgAdmin, uou will need the login details:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Property        | Value          |
+|-----------------|----------------|
+| username        | admin@test.com |
+| password        | password       |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+When setting up the connection to the PostgreSql database (either from pgAdmin or within the React application) you will need the following credentials:
+
+| Property        | Value      |
+|-----------------|------------|
+| host            | postgres   |
+| port            | 5432       |
+| database name   | booksdb    |
+| username        | dbuser     |
+| password        | password   |
